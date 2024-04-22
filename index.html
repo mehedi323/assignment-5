@@ -37,7 +37,7 @@
                   <div class="max-w-md">
                     <h1 class="mb-5 text-5xl font-extrabold">End-to-End Travel<span class="text-[#1DD100] "> P Paribahan</span></h1>
                     <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-                    <button class="btn bg-[#1DD100] border-none font-bold">Buy Tickets</button>
+                    <button id="scrollButton" class="btn bg-[#1DD100] border-none font-bold">Buy Tickets</button>
                   </div>
                 </div>
               </div>
@@ -81,8 +81,9 @@
         </section>
         <!-- Best Offer Section End Here -->
 
-        <Section class="min-h-screen mt-20 border-t-2 border-[#1DD100] rounded-t-3xl">
-          <div class=" w-[50%] mx-auto text-center pt-10 space-y-4">
+        <!-- Royel Paribahan section start here -->
+        <Section id="targetSection" class="min-h-screen mt-20 border-t-2 border-[#1DD100] rounded-t-3xl">
+          <div class=" w-[50%] mx-auto text-center pt-10 mb- space-y-4">
             <h1 class="text-2xl font-bold">Royel Paribahan</h1>
             <p>Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
           </div>
@@ -94,7 +95,7 @@
                 <p>Coach-009-WEB ! AC_Business</p>
               </div>
               <div>
-                <h3 class="bg-[#1DD100] p-4 rounded-full text-white"><span><i class="fa-solid fa-chair"></i></span>40 Seats left</h3>
+                <h3 class="bg-[#1DD100] p-4 rounded-full text-white"><span><i class="fa-solid fa-chair"></i></span><span id="40-seat">40</span>Seats left</h3>
               </div>
             </div>
             <div class="">
@@ -115,14 +116,117 @@
            </div>
            <div class="text-center border-l-2 border-dotted border-[#1DD100] p-16">
             <span class=""><i class="fa-solid fa-bangladeshi-taka-sign bg-[#1DD100] p-4 rounded-full font-extrabold"></i></span>
-            <h1 class="text-3xl font-bold">550 Taka</h1>
+            <h1 id="price" class="text-3xl font-bold">550 Taka</h1>
             <h2>Per Seat</h2>
            </div>
           </div>
         </Section>
+        <!-- Royel Paribaha sectio end here -->
+
+        <section class="w-[1200px] mx-auto">
+          <div class="flex">
+            <div class="left-side w-3/5 border-r border-dotted border-[#1DD100] pr-8">
+              <h1 class="text-2xl font-bold border-b-2 p-2 border-dotted">Select Your Seat</h1>
+              <div class="flex justify-between border-b-2 border-dotted p-4">
+                <h3><span><i class="fa-solid fa-couch mr-2"></i></span>Available</h3>
+                <h2 class="text-[#1DD100]"><span><i class="fa-solid fa-couch mr-2"></i></span>Selected</h2>
+              </div>
+              <div class="flex justify-end mt-10 ">
+                <img src="./images/Group 56.svg" alt=""> 
+              </div>
+              <div  class="grid grid-cols-5 gap-4 mt-4">
+                <h3>A</h3>
+                <h2 id="A1" class=" bg-gray-300 text-center p-4 rounded-md ">A1</h2>
+                <h2 id="A2" class="bg-gray-300 p-4 text-center rounded-md ">A2</h2>
+                <h2 id="A3" class="bg-gray-300 p-4 text-center rounded-md ">A3</h2>
+                <h2 id="A4" class="bg-gray-300 p-4 text-center rounded-md ">A4</h2>
+                <h3>B</h3>
+                <h2 id="B1" class="bg-gray-300 text-center p-4 rounded-md ">B1</h2>
+                <h2 id="B2" class="bg-gray-300 p-4 text-center rounded-md ">B2</h2>
+                <h2 id="B3" class="bg-gray-300 p-4 text-center rounded-md ">B3</h2>
+                <h2 id="B4" class="bg-gray-300 p-4 text-center rounded-md ">B4</h2>
+                <h3>C</h3>
+                <h2 id="C1" class="bg-gray-300 text-center p-4 rounded-md ">C1</h2>
+                <h2 id="C2" class="bg-gray-300 p-4 text-center rounded-md ">C2</h2>
+                <h2 id="C3" class="bg-gray-300 p-4 text-center rounded-md ">C3</h2>
+                <h2 id="C4" class="bg-gray-300 p-4 text-center rounded-md ">C4</h2>
+                <h3>D</h3>
+                <h2 id="D1" class="bg-gray-300 text-center p-4 rounded-md ">D1</h2>
+                <h2 id="D2" class="bg-gray-300 p-4 text-center rounded-md ">D2</h2>
+                <h2 id="D3" class="bg-gray-300 p-4 text-center rounded-md ">D3</h2>
+                <h2 id="D4" class="bg-gray-300 p-4 text-center rounded-md ">D4</h2>
+                <h3>E</h3>
+                <h2 id="E1" class="bg-gray-300 text-center p-4 rounded-md ">E1</h2>
+                <h2 id="E2" class="bg-gray-300 p-4 text-center rounded-md ">E2</h2>
+                <h2 id="E3" class="bg-gray-300 p-4 text-center rounded-md ">E3</h2>
+                <h2 id="E4" class="bg-gray-300 p-4 text-center rounded-md ">E4</h2>
+                <h3>F</h3>
+                <h2 id="F1" class="bg-gray-300 text-center p-4 rounded-md ">F1</h2>
+                <h2 id="F2" class="bg-gray-300 p-4 text-center rounded-md ">F2</h2>
+                <h2 id="F3" class="bg-gray-300 p-4 text-center rounded-md ">F3</h2>
+                <h2 id="F4" class="bg-gray-300 p-4 text-center rounded-md ">F4</h2>
+                <h3>G</h3>
+                <h2 id="G1" class="bg-gray-300 text-center p-4 rounded-md ">G1</h2>
+                <h2 id="G2" class="bg-gray-300 p-4 text-center rounded-md ">G2</h2>
+                <h2 id="G3" class="bg-gray-300 p-4 text-center rounded-md ">G3</h2>
+                <h2 id="G4" class="bg-gray-300 p-4 text-center rounded-md ">G4</h2>
+                <h3>H</h3>
+                <h2 id="H1" class="bg-gray-300 text-center p-4 rounded-md ">H1</h2>
+                <h2 id="H2" class="bg-gray-300 p-4 text-center rounded-md ">H2</h2>
+                <h2 id="H3" class="bg-gray-300 p-4 text-center rounded-md ">H3</h2>
+                <h2 id="H4" class="bg-gray-300 p-4 text-center rounded-md ">H4</h2>
+                <h3>I</h3>
+                <h2 id="I1" class="bg-gray-300 text-center p-4 rounded-md ">I1</h2>
+                <h2 id="I2" class="bg-gray-300 p-4 text-center rounded-md ">I2</h2>
+                <h2 id="I3" class="bg-gray-300 p-4 text-center rounded-md ">I3</h2>
+                <h2 id="I4" class="bg-gray-300 p-4 text-center rounded-md ">I4</h2>
+                <h3>J</h3>
+                <h2 id="J1" class="bg-gray-300 text-center p-4 rounded-md ">J1</h2>
+                <h2 id="J2" class="bg-gray-300 p-4 text-center rounded-md ">J2</h2>
+                <h2 id="J3" class="bg-gray-300 p-4 text-center rounded-md ">J3</h2>
+                <h2 id="J4" class="bg-gray-300 p-4 text-center rounded-md ">J4</h2>
+              </div>
+            </div>
+            <div class="right-side w-2/5 p-4">
+              <h1 class="text-2xl font-bold border-b-2 p-2 border-dotted">Select Your Seat</h1>
+              <div class="flex justify-between border-b-2 border-dotted items-center p-4">
+                <div class=" ">
+                  <h3 class="text-xl font-bold">Seat <span class="text-2xl bg-[#1DD100] p-2 rounded-full" id="seat-id">0</span></h3>
+                </div>
+                <div>
+                  <h3  class="text-xl font-bold">Class</h3>
+                </div>
+                <div>
+                  <h3 class="text-xl font-bold">Price</h3>
+                </div>
+              </div>
+              <div id="select-seat-number-container">
+                 
+              </div> 
+              <div class="w-full">
+                <h1 class="pt-5 text-black font-bold text-xl">Passenger Name*</h1> <br>
+                <input class="text-xl p-4 w-full border-2 rounded-lg border-gray-200" type="text" placeholder="Enter your name" name="" id=""> <br>
+                <h1 class="pt-5 text-black font-bold text-xl">Phone Number*</h1>
+                <input  class="text-xl p-4 w-full border-2 rounded-lg border-gray-200" type="text" placeholder="Enter your phone number" name="" id=""> <br>
+                <h1 class="pt-5 text-black font-bold text-xl">Email ID</h1>
+                <input  class="text-xl p-4 w-full border-2 rounded-lg border-gray-200" type="text" placeholder="Enter your email id" name="" id="">
+                <button class="w-full p-4 bg-[#1DD100] rounded-lg mt-5 font-bold text-white text-2xl">Next</button>
+                <div class="tacbox mt-5"> 
+                  <label class=" w-full mr-10 border-b border-black" for="checkbox"> <a href="#">Terms and Conditions</a></label>
+                  <label class=" w-full ml-10 border-b border-black" for="checkbox"> <a href="#">Cancellation Policy</a>.</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         
-     </main>
+      
+      </main>
+
      <footer></footer>
+
+     <!--  -->
+     <script src="Script/script.js"></script>
 </body>
 
 
