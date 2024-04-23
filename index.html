@@ -95,7 +95,7 @@
                 <p>Coach-009-WEB ! AC_Business</p>
               </div>
               <div>
-                <h3 class="bg-[#1DD100] p-4 rounded-full text-white"><span><i class="fa-solid fa-chair"></i></span><span id="40-seat">40</span>Seats left</h3>
+                <h3 class="bg-[#1DD100] p-4 rounded-full text-white"><span><i class="fa-solid fa-chair"></i></span><span class="mx-2" id="40-seat">40</span>Seats left</h3>
               </div>
             </div>
             <div class="">
@@ -116,7 +116,7 @@
            </div>
            <div class="text-center border-l-2 border-dotted border-[#1DD100] p-16">
             <span class=""><i class="fa-solid fa-bangladeshi-taka-sign bg-[#1DD100] p-4 rounded-full font-extrabold"></i></span>
-            <h1 id="price" class="text-3xl font-bold">550 Taka</h1>
+            <h1 class="text-3xl font-bold"><span id="price">550</span>Taka</h1>
             <h2>Per Seat</h2>
            </div>
           </div>
@@ -189,20 +189,38 @@
             </div>
             <div class="right-side w-2/5 p-4">
               <h1 class="text-2xl font-bold border-b-2 p-2 border-dotted">Select Your Seat</h1>
-              <div class="flex justify-between border-b-2 border-dotted items-center p-4">
-                <div class=" ">
-                  <h3 class="text-xl font-bold">Seat <span class="text-2xl bg-[#1DD100] p-2 rounded-full" id="seat-id">0</span></h3>
-                </div>
-                <div>
-                  <h3  class="text-xl font-bold">Class</h3>
-                </div>
-                <div>
-                  <h3 class="text-xl font-bold">Price</h3>
-                </div>
+          <div class="bg-gray-100 rounded-lg mt-5 p-4">
+            <div class="flex justify-between border-b-2 border-dotted items-center p-4">
+              <div class=" ">
+                <h3 class="text-xl font-bold">Seat <span class="text-2xl bg-[#1DD100] p-2 rounded-full" id="seat-id">0</span></h3>
               </div>
-              <div id="select-seat-number-container">
-                 
-              </div> 
+              <div>
+                <h3  class="text-xl font-bold">Class</h3>
+              </div>
+              <div>
+                <h3 class="text-xl font-bold">Price</h3>
+              </div>
+            </div>
+            <div class="flex justify-between items-center border-b-2 border-dotted p-4 mb-2">
+              <div class="  font-bold" id="select-seat-number-container"> 
+              </div>  
+              <div class="  font-bold" id="select-seat-name"> 
+              </div>
+              <div class="  font-bold" id="select-seat-price"> 
+              </div>
+            </div>
+            <div class="flex justify-between">
+              <h1 class="text-xl font-bold">Total Price</h1>
+              <h2 class="text-xl font-bold">BDT <span id="total-price">0</span></h2>
+            </div> 
+          <div class="w-full mx-auto p-4">
+            <input class="p-4  bg-gray-50 rounded-lg" placeholder="Have any copupon?" type="text">
+            <input class="p-4 bg-[#1DD100] rounded-xl" type="button" value="Apply">
+          </div>
+          <div>
+            <h1>Grand Total</h1>
+          </div>
+          </div>
               <div class="w-full">
                 <h1 class="pt-5 text-black font-bold text-xl">Passenger Name*</h1> <br>
                 <input class="text-xl p-4 w-full border-2 rounded-lg border-gray-200" type="text" placeholder="Enter your name" name="" id=""> <br>
@@ -223,7 +241,30 @@
       
       </main>
 
-     <footer></footer>
+     <footer>
+      <footer class="footer p-10 mt-10 bg-neutral text-neutral-content">
+        <nav>
+          <h6 class="footer-title text-2xl text-white font-bold">Royel Paribahan</h6> 
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav> 
+        <nav>
+          <h6 class="footer-title">Company</h6> 
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav> 
+        <nav>
+          <h6 class="footer-title">Legal</h6> 
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+      </footer>
+     </footer>
 
      <!--  -->
      <script src="Script/script.js"></script>

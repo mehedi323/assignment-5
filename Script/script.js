@@ -18,12 +18,31 @@ for(const tikets of Ticket){
         count = count + 1;
         count2 = count2 - 1;
         const seatNumber = e.target.innerText;
+        
+        const selectSeatPrice = document.getElementById('select-seat-price')
+        const selectSeatName = document.getElementById('select-seat-name')
         const selectseatcontainer = document.getElementById('select-seat-number-container');
         const li = document.createElement('li');
+        const li2 = document.createElement('li')
+        const li3 =document.createElement('li');
+        const p3 =document.createElement('p');
         const p = document.createElement('p'); 
+        const p2 = document.createElement('p'); 
+        p3.innerText = '550';   
         p.innerText =seatNumber;
-        li.appendChild(p); 
+        p2.innerText = 'Economi'
+        li.appendChild(p);
+        li2.appendChild(p2)
+        li3.appendChild(p3)
+        selectSeatName.appendChild(li2)
+        selectSeatPrice.appendChild(li3)
         selectseatcontainer.appendChild(li); 
+
+        const price = document.getElementById('price').innerText;
+        const totalPrice = document.getElementById('total-price').innerText;
+
+        const totalCost =  parseInt(totalPrice)
+        document.getElementById('total-price').innerText = totalCost + parseInt(price)
  
         setBackgroundColor(seatNumber)
         setInnerText('seat-id' , count)
